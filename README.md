@@ -1,4 +1,4 @@
-# parthasarathi.dev — Personal Portfolio
+# parthasarathi.m — Personal Portfolio
 
 My personal developer portfolio, built with **React.js** and **Tailwind CSS**. It showcases my work experience, personal projects, and the skills I use day to day as a Frontend Developer.
 
