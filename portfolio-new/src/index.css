@@ -560,6 +560,41 @@ a:focus-visible, button:focus-visible {
   border-radius: 2px;
 }
 
+.polaroid {
+  transform-origin: top center;
+  animation: sway 4s ease-in-out infinite;
+  position: relative;
+}
+
+.polaroid-pin {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ff6b6b, #b91c1c 70%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+  z-index: 10;
+}
+
+.polaroid-pin::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 8px;
+  background: #7a7a7a;
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(-1.5deg); }
+  50% { transform: rotate(1.5deg); }
+}
+
 /* ============ Responsive ============ */
 @media (max-width: 880px) {
   .hero { grid-template-columns: 1fr; }

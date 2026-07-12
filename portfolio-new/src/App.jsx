@@ -86,6 +86,7 @@ export default function App() {
           </div>
 
           <div className="polaroid">
+            <span className="polaroid-pin" aria-hidden="true" />
             <Tape className="polaroid-tape" color="blue" />
             <div className="polaroid-photo">
             <img src="/profile.jpg" alt="Parthasarathi M" />
